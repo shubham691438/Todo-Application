@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Todo List</title>
+        <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>My Todo List</h1>
+        <div id="todo-table">
+            <form>
+                <input type="text" name="item" placeholder="Add New Item ..." required/>
+                <button type="submit">Add Item</button>
+            </form>
+            <ul>
+                <% data.map((item)=>{%>
+                  <li><%=item%></li>  
+                <%}) %>
+                    
+            </ul>
+        </div>
+    </body>
+</html>
